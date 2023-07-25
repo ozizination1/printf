@@ -26,14 +26,13 @@ int _printf(const char *format, ...)
 			}
 			else if (*format == 's')
 			{
-				char *str = (va_arg(allArgs, char*));
+				*str = (va_arg(allArgs, char*));
 				while (*str != '\0')
 				{
 					_putchar(*str);
 					str++;
 					i++;
 				}
-			
 			}
 			else if (*format == '%')
 			{
