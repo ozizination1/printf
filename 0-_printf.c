@@ -40,11 +40,11 @@ int _printf(const char *format, ...)
 				_putchar(va_arg(allArgs, int));
 				i++;
 			}
-			else
-			{
-			 	_putchar(*format);
-				i++;
-			}
+		}
+		else
+		{
+			_putchar(*format);
+			i++;
 		}
 		format++;
 	}
