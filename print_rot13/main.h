@@ -38,5 +38,8 @@ char *replace_str(char *s);
 int p_add(va_list args);
 char *rot13(char *n);
 int p_rot13(va_list args);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9921c5d374daab7ceccd44afa65a2d070b78a717
 #endif

@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * print_formats - compares and prints according to the struct
@@ -13,6 +14,18 @@ int *print_formats(int i, char *copyfmt, va_list args)
 {
 	fn_t fmt[] = {
 		{"c", p_char},
+=======
+/**
+ * print_formats - compares and prints according to the struct
+ * @i:. iterator
+ * @copyfmt: format
+ * @args: arguments to print
+ * Return: number of characters printed.
+*/
+int *print_formats(int i, char *copyfmt, va_list args)
+{
+	fn_t fmt[] = {
+			{"c", p_char},
 			{"s", p_string},
 			{"%", p_percent},
 			{"i", p_int},
@@ -46,7 +59,7 @@ int *print_formats(int i, char *copyfmt, va_list args)
 	}
 	if (fmt[j].ob == NULL && copyfmt[i] != '\0')
 	{
-		_putchar('%');
+		_putchar("%");
 		_putchar(&copyfmt[i]);
 		count2[1] += 2;
 	}

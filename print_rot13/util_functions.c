@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 
 /**
  * p_rev - prints a string in reverse
@@ -17,7 +18,7 @@ int p_rev(va_list args)
 	{
 		s++;
 	}
-	for (j = 1; j > 0; j--)
+	for (j = i; j > 0; j--)
 	{
 		s--;
 		_putchar(s);
@@ -50,6 +51,7 @@ int p_bin(va_list args)
  *
  * Return: number of characters printed
  */
+}
 
 int p_add(va_list args)
 {
